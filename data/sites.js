@@ -11,7 +11,11 @@ window.SITES = [
   "photography": "Cameras and electronic gadgets are reported as not allowed inside the temple premises.",
   "source": "Odisha Tourism – Lingaraj Temple",
   "sourceUrl": "https://odishatourism.gov.in/en/places/lingaraj-temple",
-  "image": null
+  "trail": "old-town-temple-walk",
+  "stop": 1,
+  "image": null,
+  "imageAlt": null,
+  "story": null
  },
  {
   "id": "mukteswar-temple",
@@ -25,7 +29,11 @@ window.SITES = [
   "photography": null,
   "source": "Odisha Tourism – Mukteswar Temple",
   "sourceUrl": "https://odishatourism.gov.in/en/places/mukteswara-temple",
-  "image": null
+  "trail": "old-town-temple-walk",
+  "stop": 4,
+  "image": null,
+  "imageAlt": null,
+  "story": null
  },
  {
   "id": "rajarani-temple",
@@ -39,7 +47,11 @@ window.SITES = [
   "photography": null,
   "source": "Odisha Tourism – Rajarani Temple",
   "sourceUrl": "https://odishatourism.gov.in/en/places/rajarani-temple",
-  "image": null
+  "trail": "old-town-temple-walk",
+  "stop": 5,
+  "image": null,
+  "imageAlt": null,
+  "story": null
  },
  {
   "id": "udayagiri-caves",
@@ -53,7 +65,11 @@ window.SITES = [
   "photography": "Some sources mention a separate ticket for video cameras. To check.",
   "source": "Odisha Tourism – Udayagiri & Khandagiri Caves",
   "sourceUrl": "https://odishatourism.gov.in/en/places/udayagiri-khandagiri-caves",
-  "image": null
+  "trail": "twin-hills-caves-walk",
+  "stop": 1,
+  "image": null,
+  "imageAlt": null,
+  "story": null
  },
  {
   "id": "khandagiri-caves",
@@ -67,7 +83,11 @@ window.SITES = [
   "photography": null,
   "source": "Odisha Tourism – Udayagiri & Khandagiri Caves",
   "sourceUrl": "https://odishatourism.gov.in/en/places/udayagiri-khandagiri-caves",
-  "image": null
+  "trail": "twin-hills-caves-walk",
+  "stop": 2,
+  "image": null,
+  "imageAlt": null,
+  "story": null
  },
  {
   "id": "parasurameswar-temple",
@@ -81,7 +101,11 @@ window.SITES = [
   "photography": null,
   "source": "Odisha Tourism – Parasurameswar Temple",
   "sourceUrl": "https://odishatourism.gov.in/en/places/parasurameswar-temple",
-  "image": null
+  "trail": "old-town-temple-walk",
+  "stop": 3,
+  "image": null,
+  "imageAlt": null,
+  "story": null
  },
  {
   "id": "ananta-vasudeva-temple",
@@ -95,7 +119,11 @@ window.SITES = [
   "photography": null,
   "source": "Odisha Tourism – Ananta Basudeva Temple",
   "sourceUrl": "https://odishatourism.gov.in/en/places/ananta-basudeva-temple",
-  "image": null
+  "trail": "old-town-temple-walk",
+  "stop": 2,
+  "image": null,
+  "imageAlt": null,
+  "story": null
  },
  {
   "id": "dhauli-shanti-stupa-and-ashokan-rock-edicts",
@@ -109,7 +137,11 @@ window.SITES = [
   "photography": null,
   "source": "Odisha Tourism – Dhauli Shanti Stupa",
   "sourceUrl": "https://odishatourism.gov.in/en/places/dhauli-shanti-stupa-dhauli-hills",
-  "image": null
+  "trail": null,
+  "stop": null,
+  "image": null,
+  "imageAlt": null,
+  "story": null
  },
  {
   "id": "chausathi-yogini-temple",
@@ -123,7 +155,11 @@ window.SITES = [
   "photography": null,
   "source": "Odisha Tourism – Chausathi Yogini Temple",
   "sourceUrl": "https://odishatourism.gov.in/en/places/chausathi-yogini-temple-hirapur",
-  "image": null
+  "trail": null,
+  "stop": null,
+  "image": null,
+  "imageAlt": null,
+  "story": null
  },
  {
   "id": "odisha-state-museum",
@@ -137,7 +173,11 @@ window.SITES = [
   "photography": null,
   "source": "Odisha Tourism – Odisha State Museum",
   "sourceUrl": "https://odishatourism.gov.in/en/places/odisha-state-musuem",
-  "image": null
+  "trail": null,
+  "stop": null,
+  "image": null,
+  "imageAlt": null,
+  "story": null
  },
  {
   "id": "museum-of-tribal-arts-artifacts-tribal-museum",
@@ -151,7 +191,11 @@ window.SITES = [
   "photography": null,
   "source": "Odisha Tourism – Museum of Tribal Arts & Artifacts",
   "sourceUrl": "https://odishatourism.gov.in/en/places/museum-of-tribal-arts-artifacts",
-  "image": null
+  "trail": null,
+  "stop": null,
+  "image": null,
+  "imageAlt": null,
+  "story": null
  },
  {
   "id": "regional-museum-of-natural-history",
@@ -165,6 +209,10 @@ window.SITES = [
   "photography": null,
   "source": "Odisha Tourism – Regional Museum of Natural History",
   "sourceUrl": "https://odishatourism.gov.in/en/places/regional-museum-of-natural-history",
-  "image": null
+  "trail": null,
+  "stop": null,
+  "image": null,
+  "imageAlt": null,
+  "story": null
  }
 ];

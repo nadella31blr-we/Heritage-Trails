@@ -12,4 +12,4 @@ Open `index.html` in a browser. No build step and no server needed.
 - `assets/`: styles and the script that fills the pages.
 
 ## Sprint 1 progress
-- Mon 16 Nov: site page template with placeholder story text (APDG3-28).
+- Mon 16 to Tue 17 Nov (APDG3-28): reusable site page template. Photo slot, story, hours, entry rules, photography and previous/next links that follow the trail. Add ?check=1 to a site page to see what content is still missing.
