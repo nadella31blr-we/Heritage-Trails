@@ -26,3 +26,4 @@ body{overflow-wrap:anywhere}
 .photo{margin:1.5rem 0 0}.photo img{display:block;width:100%;height:auto;max-height:22rem;object-fit:cover}
 .photo-slot{min-height:11rem;display:grid;place-items:center;color:var(--muted);border:1px dashed var(--teal);background:repeating-linear-gradient(135deg,#e3e8e3 0 12px,#edf0ec 12px 24px)}
 .check{margin-top:1.5rem;padding:1rem;border:2px solid var(--gold);background:#fff}.check p{margin:.25rem 0 0}
+.photo figcaption{margin-top:.375rem}

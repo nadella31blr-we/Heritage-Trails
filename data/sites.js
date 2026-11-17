@@ -13,9 +13,10 @@ window.SITES = [
   "sourceUrl": "https://odishatourism.gov.in/en/places/lingaraj-temple",
   "trail": "old-town-temple-walk",
   "stop": 1,
-  "image": null,
-  "imageAlt": null,
-  "story": null
+  "image": "assets/img/lingaraj-temple.svg",
+  "imageAlt": "Placeholder illustration of a Kalinga-style temple tower for Lingaraj Temple",
+  "story": null,
+  "placeholderImage": true
  },
  {
   "id": "mukteswar-temple",
@@ -31,9 +32,10 @@ window.SITES = [
   "sourceUrl": "https://odishatourism.gov.in/en/places/mukteswara-temple",
   "trail": "old-town-temple-walk",
   "stop": 4,
-  "image": null,
-  "imageAlt": null,
-  "story": null
+  "image": "assets/img/mukteswar-temple.svg",
+  "imageAlt": "Placeholder illustration of a Kalinga-style temple tower for Mukteswar Temple",
+  "story": null,
+  "placeholderImage": true
  },
  {
   "id": "rajarani-temple",
@@ -49,9 +51,10 @@ window.SITES = [
   "sourceUrl": "https://odishatourism.gov.in/en/places/rajarani-temple",
   "trail": "old-town-temple-walk",
   "stop": 5,
-  "image": null,
-  "imageAlt": null,
-  "story": null
+  "image": "assets/img/rajarani-temple.svg",
+  "imageAlt": "Placeholder illustration of a Kalinga-style temple tower for Rajarani Temple",
+  "story": null,
+  "placeholderImage": true
  },
  {
   "id": "udayagiri-caves",
@@ -67,9 +70,10 @@ window.SITES = [
   "sourceUrl": "https://odishatourism.gov.in/en/places/udayagiri-khandagiri-caves",
   "trail": "twin-hills-caves-walk",
   "stop": 1,
-  "image": null,
-  "imageAlt": null,
-  "story": null
+  "image": "assets/img/udayagiri-caves.svg",
+  "imageAlt": "Placeholder illustration of rock-cut caves in a hill for Udayagiri Caves",
+  "story": null,
+  "placeholderImage": true
  },
  {
   "id": "khandagiri-caves",
@@ -85,9 +89,10 @@ window.SITES = [
   "sourceUrl": "https://odishatourism.gov.in/en/places/udayagiri-khandagiri-caves",
   "trail": "twin-hills-caves-walk",
   "stop": 2,
-  "image": null,
-  "imageAlt": null,
-  "story": null
+  "image": "assets/img/khandagiri-caves.svg",
+  "imageAlt": "Placeholder illustration of rock-cut caves in a hill for Khandagiri Caves",
+  "story": null,
+  "placeholderImage": true
  },
  {
   "id": "parasurameswar-temple",
@@ -103,9 +108,10 @@ window.SITES = [
   "sourceUrl": "https://odishatourism.gov.in/en/places/parasurameswar-temple",
   "trail": "old-town-temple-walk",
   "stop": 3,
-  "image": null,
-  "imageAlt": null,
-  "story": null
+  "image": "assets/img/parasurameswar-temple.svg",
+  "imageAlt": "Placeholder illustration of a Kalinga-style temple tower for Parasurameswar Temple",
+  "story": null,
+  "placeholderImage": true
  },
  {
   "id": "ananta-vasudeva-temple",
@@ -121,9 +127,10 @@ window.SITES = [
   "sourceUrl": "https://odishatourism.gov.in/en/places/ananta-basudeva-temple",
   "trail": "old-town-temple-walk",
   "stop": 2,
-  "image": null,
-  "imageAlt": null,
-  "story": null
+  "image": "assets/img/ananta-vasudeva-temple.svg",
+  "imageAlt": "Placeholder illustration of a Kalinga-style temple tower for Ananta Vasudeva Temple",
+  "story": null,
+  "placeholderImage": true
  },
  {
   "id": "dhauli-shanti-stupa-and-ashokan-rock-edicts",
@@ -139,9 +146,10 @@ window.SITES = [
   "sourceUrl": "https://odishatourism.gov.in/en/places/dhauli-shanti-stupa-dhauli-hills",
   "trail": null,
   "stop": null,
-  "image": null,
-  "imageAlt": null,
-  "story": null
+  "image": "assets/img/dhauli-shanti-stupa-and-ashokan-rock-edicts.svg",
+  "imageAlt": "Placeholder illustration of a white stupa with a spire for Dhauli Shanti Stupa and Ashokan Rock Edicts",
+  "story": null,
+  "placeholderImage": true
  },
  {
   "id": "chausathi-yogini-temple",
@@ -157,9 +165,10 @@ window.SITES = [
   "sourceUrl": "https://odishatourism.gov.in/en/places/chausathi-yogini-temple-hirapur",
   "trail": null,
   "stop": null,
-  "image": null,
-  "imageAlt": null,
-  "story": null
+  "image": "assets/img/chausathi-yogini-temple.svg",
+  "imageAlt": "Placeholder illustration of a round open-roofed temple wall for Chausathi Yogini Temple",
+  "story": null,
+  "placeholderImage": true
  },
  {
   "id": "odisha-state-museum",
@@ -175,9 +184,10 @@ window.SITES = [
   "sourceUrl": "https://odishatourism.gov.in/en/places/odisha-state-musuem",
   "trail": null,
   "stop": null,
-  "image": null,
-  "imageAlt": null,
-  "story": null
+  "image": "assets/img/odisha-state-museum.svg",
+  "imageAlt": "Placeholder illustration of a columned museum building for Odisha State Museum",
+  "story": null,
+  "placeholderImage": true
  },
  {
   "id": "museum-of-tribal-arts-artifacts-tribal-museum",
@@ -193,9 +203,10 @@ window.SITES = [
   "sourceUrl": "https://odishatourism.gov.in/en/places/museum-of-tribal-arts-artifacts",
   "trail": null,
   "stop": null,
-  "image": null,
-  "imageAlt": null,
-  "story": null
+  "image": "assets/img/museum-of-tribal-arts-artifacts-tribal-museum.svg",
+  "imageAlt": "Placeholder illustration of a columned museum building for Museum of Tribal Arts & Artifacts (Tribal Museum)",
+  "story": null,
+  "placeholderImage": true
  },
  {
   "id": "regional-museum-of-natural-history",
@@ -211,8 +222,9 @@ window.SITES = [
   "sourceUrl": "https://odishatourism.gov.in/en/places/regional-museum-of-natural-history",
   "trail": null,
   "stop": null,
-  "image": null,
-  "imageAlt": null,
-  "story": null
+  "image": "assets/img/regional-museum-of-natural-history.svg",
+  "imageAlt": "Placeholder illustration of a columned museum building for Regional Museum of Natural History",
+  "story": null,
+  "placeholderImage": true
  }
 ];
