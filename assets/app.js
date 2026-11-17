@@ -20,11 +20,13 @@ function tab(n){document.getElementById('tab-explore').hidden=n!=='explore';docu
 Object.keys(TR).forEach(function(k){var l=trail(k),a=el('a','tcard');a.href=url(l[0],k);a.appendChild(img(l[0],'t-img'));
 var b=el('div','t-body');b.appendChild(el('strong',0,TR[k]));b.appendChild(el('span','m',l.length+' stops'));a.appendChild(b);document.getElementById('trails').appendChild(a)});
 var type='All',term='',chips=document.getElementById('chips');
+var PL={Temple:'Temples',Cave:'Caves',Museum:'Museums',Monument:'Monuments'},th=document.getElementById('th'),tr=document.getElementById('trails'),gh=document.getElementById('gh');
 function draw(){grid.textContent='';var n=0;S.forEach(function(s){if((type==='All'||s.type===type)&&s.name.toLowerCase().indexOf(term)>-1){n++;
 var a=el('a','card');a.href=url(s);a.appendChild(img(s,'c-img'));var b=el('div','c-body');b.appendChild(el('strong',0,s.name));b.appendChild(el('span','m',s.type+', '+s.period));a.appendChild(b);grid.appendChild(a)}});
+var f=type!=='All'||term;th.hidden=tr.hidden=f;gh.textContent=!f?'Explore sites':(type!=='All'&&!term?PL[type]:'Results')+' ('+n+')';
 if(!n)grid.appendChild(el('p','note','No sites match. Try another word or filter.'))}
 ['All','Temple','Cave','Museum','Monument'].forEach(function(t){var b=el('button','chip',t);b.type='button';b.setAttribute('aria-pressed',t==='All');
-b.onclick=function(){type=t;[].forEach.call(chips.children,function(c){c.setAttribute('aria-pressed',c===b)});draw()};chips.appendChild(b)});
+b.onclick=function(){type=t;setTimeout(function(){gh.scrollIntoView({behavior:'smooth',block:'start'})},0);[].forEach.call(chips.children,function(c){c.setAttribute('aria-pressed',c===b)});draw()};chips.appendChild(b)});
 document.getElementById('search').oninput=function(e){term=e.target.value.toLowerCase().trim();draw()};draw()}
 var page=document.getElementById('site-page');
 if(page){
