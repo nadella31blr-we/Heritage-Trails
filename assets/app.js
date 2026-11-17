@@ -1,4 +1,5 @@
 (function(){
+if(!HT.get()){location.replace('index.html');return}
 var S=window.SITES||[],q=new URLSearchParams(location.search);
 var TR={'old-town-temple-walk':'Old Town Temple Walk','twin-hills-caves-walk':'Twin Hills Caves Walk'};
 function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
@@ -12,6 +13,10 @@ if(!s.timings)m.push('timings');if(!s.entry)m.push('entry rules');return m}
 function fee(s){return /^only hindus/i.test(s.entry)?'Hindus only inside':/^(free|no entry fee)/i.test(s.entry)?'Free entry':'Ticketed'}
 var grid=document.getElementById('grid');
 if(grid){
+var me=HT.get();document.getElementById('hi').textContent='Hi, '+me.name;document.getElementById('pn').textContent=me.name;document.getElementById('pp').textContent='+91 '+me.phone.slice(0,5)+' '+me.phone.slice(5);
+document.getElementById('signout').onclick=function(){HT.out();location.replace('index.html')};
+function tab(n){document.getElementById('tab-explore').hidden=n!=='explore';document.getElementById('tab-profile').hidden=n!=='profile';[].forEach.call(document.querySelectorAll('.tabs button'),function(b){if(b.dataset.t===n)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});scrollTo(0,0)}
+[].forEach.call(document.querySelectorAll('.tabs button'),function(b){b.onclick=function(){tab(b.dataset.t)}});
 Object.keys(TR).forEach(function(k){var l=trail(k),a=el('a','tcard');a.href=url(l[0],k);a.appendChild(img(l[0],'t-img'));
 var b=el('div','t-body');b.appendChild(el('strong',0,TR[k]));b.appendChild(el('span','m',l.length+' stops'));a.appendChild(b);document.getElementById('trails').appendChild(a)});
 var type='All',term='',chips=document.getElementById('chips');
@@ -39,7 +44,7 @@ var src=document.getElementById('source');src.href=s.sourceUrl;src.textContent=s
 var t=q.get('trail')||s.trail,order=t?trail(t):S,i=order.indexOf(s),pager=document.getElementById('pager');
 if(t){var bar=document.getElementById('bar');bar.hidden=false;var st=el('div','stop');st.appendChild(el('b',0,TR[t]+': stop '+(i+1)+' of '+order.length));
 var dots=el('div','dots');order.forEach(function(x,j){dots.appendChild(el('i',j<=i?'on':''))});st.appendChild(dots);bar.appendChild(st);
-var nx=el('a',0,i<order.length-1?'Next stop':'Finish');nx.href=i<order.length-1?url(order[i+1],t):'index.html';bar.appendChild(nx)}
+var nx=el('a',0,i<order.length-1?'Next stop':'Finish');nx.href=i<order.length-1?url(order[i+1],t):'home.html';bar.appendChild(nx)}
 else{if(i>0){var p=el('a','prev','Previous: '+order[i-1].name);p.href=url(order[i-1]);pager.appendChild(p)}
 if(i<order.length-1){var n=el('a','next','Next: '+order[i+1].name);n.href=url(order[i+1]);pager.appendChild(n)}}
 if(q.get('check')==='1'){var m=missing(s),b=document.getElementById('check');b.hidden=false;b.appendChild(el('strong',0,'Content check (team only)'));
