@@ -19,6 +19,9 @@ App-style layout: searchable site cards with type filters, walk cards, a full-wi
 - `site.html`: the reusable site page template (APDG3-28), one site per `?site=<id>`. Add `&trail=<trail-id>` to follow a walk, or `?check=1` to see missing content.
 - `assets/img/`: placeholder illustrations, used if a photo link fails to load.
 
+## Banners (US05)
+Style guide from the team: forest green #223B30, sandstone #B58443, warm ivory #F6F1E5, ink #232722. Each site page shows a banner with an uppercase eyebrow, bold title and one description line. Banner files are WebP in `assets/img/banners/` (about 40 to 57 KB each). Alt text and credits are in `data/sites.js`. Brahmeswar and Bindu Sagar banners are saved but have no site data yet.
+
 ## Photos
 Photo links come from the research sheet. Record each photo's credit and licence in `imageCredit` before publishing (US05 criteria).
 

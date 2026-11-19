@@ -16,11 +16,14 @@ window.SITES = [
   "trail": "old-town-temple-walk",
   "stop": 1,
   "mapQuery": "Lingaraj Temple, Old Town, Bhubaneswar, Odisha",
-  "image": "https://s7ap1.scene7.com/is/image/incredibleindia/lingaraj-temple-bhubaneshwar-odisha-2-attr-hero?qlt=82&ts=1742165154990",
+  "image": "assets/img/banners/lingaraj.webp",
   "fallback": "assets/img/lingaraj-temple.svg",
-  "imageAlt": "Lingaraj Temple, Bhubaneswar",
+  "imageAlt": "A tall stone temple tower rising above a cluster of smaller shrines, under a clear sky.",
   "story": null,
-  "imageCredit": null
+  "imageCredit": "Banner artwork. Photo reference: Sanjeeb Behera 45, Wikimedia Commons.",
+  "eyebrow": "THE TEMPLE CITY",
+  "tagline": "An imposing Kalinga-style shrine at the heart of old Bhubaneswar.",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Lingaraj_Temple_Bhubaneswar.jpg"
  },
  {
   "id": "mukteswar-temple",
@@ -39,11 +42,14 @@ window.SITES = [
   "trail": "old-town-temple-walk",
   "stop": 4,
   "mapQuery": "Mukteswar Temple, Old Town, Bhubaneswar, Odisha",
-  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx05jowlEmXX_DdJDon_I7PfbNF_hdr8VJP66mxoRUKA&s=10",
+  "image": "assets/img/banners/mukteswar.webp",
   "fallback": "assets/img/mukteswar-temple.svg",
-  "imageAlt": "Mukteswar Temple, Bhubaneswar",
+  "imageAlt": "An ornate carved torana gateway framing the Mukteswar temple complex.",
   "story": null,
-  "imageCredit": null
+  "imageCredit": "Banner artwork. Photo reference: Sangram Keshari Senapati, Wikimedia Commons.",
+  "eyebrow": "THE GEM OF ODISHA",
+  "tagline": "A celebrated stone gateway and richly carved tenth-century shrine.",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Mukteswar_Temple_in_Bhubaneswar_Old_Town.jpg"
  },
  {
   "id": "rajarani-temple",
@@ -62,11 +68,14 @@ window.SITES = [
   "trail": "old-town-temple-walk",
   "stop": 5,
   "mapQuery": "Rajarani Temple, Rajarani Colony, Bhubaneswar, Odisha",
-  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAs4p6p5I4clksrg-0jcr0gvZrCUC7km7yJHTsdtItfw&s=10",
+  "image": "assets/img/banners/rajarani.webp",
   "fallback": "assets/img/rajarani-temple.svg",
-  "imageAlt": "Rajarani Temple, Bhubaneswar",
+  "imageAlt": "The warm sandstone tower and sculpted exterior of Rajarani Temple.",
   "story": null,
-  "imageCredit": null
+  "imageCredit": "Banner artwork. Photo reference: Amartyabag, Wikimedia Commons.",
+  "eyebrow": "SCULPTED IN STONE",
+  "tagline": "A graceful sandstone temple known for its sculptural detail.",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Rajarani_Temple_Side_View.jpg"
  },
  {
   "id": "udayagiri-caves",
@@ -85,11 +94,14 @@ window.SITES = [
   "trail": "twin-hills-caves-walk",
   "stop": 1,
   "mapQuery": "Udayagiri Caves, Bhubaneswar, Odisha",
-  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtjtMDmqez5IgLvmtFb5sfG7lO8fLShIuV1l_xvlcvSA&s=10",
+  "image": "assets/img/banners/udayagiri-khandagiri.webp",
   "fallback": "assets/img/udayagiri-caves.svg",
-  "imageAlt": "Udayagiri Caves, Bhubaneswar",
+  "imageAlt": "Rock-cut cave chambers and sculpted stone facades in the twin hills.",
   "story": null,
-  "imageCredit": null
+  "imageCredit": "Banner artwork. Photo reference: Debu 05, Wikimedia Commons.",
+  "eyebrow": "CARVED INTO THE HILLS",
+  "tagline": "Ancient rock-cut caves connected with the Jain tradition and Kharavela.",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Khandagiri-Udyagiri-1_-group_of_cave_temples,_Odisha,_India.jpg"
  },
  {
   "id": "khandagiri-caves",
@@ -108,11 +120,14 @@ window.SITES = [
   "trail": "twin-hills-caves-walk",
   "stop": 2,
   "mapQuery": "Khandagiri Caves, Bhubaneswar, Odisha",
-  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR23fESAg7GwwYJvoMXFRKoZek0SKeeEidmomHmTEmZRA&s=10",
+  "image": "assets/img/banners/udayagiri-khandagiri.webp",
   "fallback": "assets/img/khandagiri-caves.svg",
-  "imageAlt": "Khandagiri Caves, Bhubaneswar",
+  "imageAlt": "Rock-cut cave chambers and sculpted stone facades in the twin hills.",
   "story": null,
-  "imageCredit": null
+  "imageCredit": "Banner artwork. Photo reference: Debu 05, Wikimedia Commons.",
+  "eyebrow": "CARVED INTO THE HILLS",
+  "tagline": "Ancient rock-cut caves connected with the Jain tradition and Kharavela.",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Khandagiri-Udyagiri-1_-group_of_cave_temples,_Odisha,_India.jpg"
  },
  {
   "id": "parasurameswar-temple",
@@ -131,11 +146,14 @@ window.SITES = [
   "trail": "old-town-temple-walk",
   "stop": 3,
   "mapQuery": "Parasurameswar Temple, Old Town, Bhubaneswar, Odisha",
-  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8q0zPDIqFs7-99UlSVI0eq8xVPtQatYCUJLoKPpYgxg&s=10",
+  "image": "assets/img/banners/parasurameswar.webp",
   "fallback": "assets/img/parasurameswar-temple.svg",
-  "imageAlt": "Parasurameswar Temple, Bhubaneswar",
+  "imageAlt": "Parasurameswar Temple, showing its compact stone shrine and sculpted tower.",
   "story": null,
-  "imageCredit": null
+  "imageCredit": "Banner artwork. Photo reference: Balaji, Wikimedia Commons.",
+  "eyebrow": "EARLY KALINGA ARCHITECTURE",
+  "tagline": "An early surviving temple that reveals the evolution of Kalinga design.",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Parasurameswar_Temple.jpg"
  },
  {
   "id": "ananta-vasudeva-temple",
@@ -154,11 +172,14 @@ window.SITES = [
   "trail": "old-town-temple-walk",
   "stop": 2,
   "mapQuery": "Ananta Basudeva Temple, Bindusagar, Old Town, Bhubaneswar, Odisha",
-  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8TwvkQva7up0QxuAbJJc24wx4SXJEn4vX_9TBHZgJcQ&s=10",
+  "image": "assets/img/banners/ananta-vasudeva.webp",
   "fallback": "assets/img/ananta-vasudeva-temple.svg",
-  "imageAlt": "Ananta Vasudeva Temple, Bhubaneswar",
+  "imageAlt": "Ananta Vasudeva Temple seen across the Bindu Sagar water tank.",
   "story": null,
-  "imageCredit": null
+  "imageCredit": "Banner artwork. Photo reference: Radosław Botev / Fundacja Nomos, Wikimedia Commons.",
+  "eyebrow": "THE VAISHNAVA SHRINE",
+  "tagline": "A historic temple beside the sacred waters of Bindu Sagar.",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Bhubaneshwar_-_Bindu_Sagar_pond_with_Brahma_temple_-_view_to_Ananta_Vasudeva_Temple.jpg"
  },
  {
   "id": "dhauli-shanti-stupa-and-ashokan-rock-edicts",
@@ -177,11 +198,14 @@ window.SITES = [
   "trail": null,
   "stop": null,
   "mapQuery": "Dhauli Shanti Stupa, Dhauli Hills, Bhubaneswar, Odisha",
-  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVjKowtHY0UGXlUPZ-qKSvloLG6DScJcyE4kT22WyWUA&s=10",
+  "image": "assets/img/banners/dhauli.webp",
   "fallback": "assets/img/dhauli-shanti-stupa-and-ashokan-rock-edicts.svg",
-  "imageAlt": "Dhauli Shanti Stupa and Ashokan Rock Edicts, Bhubaneswar",
+  "imageAlt": "The white domed Shanti Stupa standing on the green Dhauli hillside.",
   "story": null,
-  "imageCredit": null
+  "imageCredit": "Banner artwork. Photo reference: Psubhashish, Wikimedia Commons.",
+  "eyebrow": "A LANDMARK OF PEACE",
+  "tagline": "A memorial landscape associated with the Kalinga War and Ashoka.",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Dhauli_Peace_Pagoda.jpg"
  },
  {
   "id": "chausathi-yogini-temple",
@@ -223,11 +247,14 @@ window.SITES = [
   "trail": null,
   "stop": null,
   "mapQuery": "Odisha State Museum, Lewis Road, Bhubaneswar, Odisha",
-  "image": "https://odishatour.in/wp-content/uploads/2022/12/Bhubaneswar-musuem.jpg",
+  "image": "assets/img/banners/state-museum.webp",
   "fallback": "assets/img/odisha-state-museum.svg",
-  "imageAlt": "Odisha State Museum, Bhubaneswar",
+  "imageAlt": "The entrance facade of the Odisha State Museum with a landscaped forecourt.",
   "story": null,
-  "imageCredit": null
+  "imageCredit": "Banner artwork. Photo reference: Hemant_sahu_Raj, Wikimedia Commons.",
+  "eyebrow": "THE STORY OF ODISHA",
+  "tagline": "A place to explore the region’s history, archaeology and cultural collections.",
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Odisha_State_Museum.jpg"
  },
  {
   "id": "museum-of-tribal-arts-artifacts-tribal-museum",

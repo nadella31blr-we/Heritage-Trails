@@ -33,7 +33,8 @@ if(page){
 var s=S.filter(function(x){return x.id===q.get('site')})[0];
 if(!s){page.textContent='';page.appendChild(el('p',0,'We could not find that site. Go back to the list and choose one.'));return}
 document.title=s.name+' | Heritage Trails';
-document.getElementById('hero').appendChild(img(s,''));
+document.getElementById('hero').insertBefore(img(s,''),document.getElementById('hero').firstChild);document.getElementById('eb').textContent=s.eyebrow||s.type;var tg=document.getElementById('tag');tg.textContent=s.tagline||'';tg.hidden=!s.tagline;
+var cr=document.getElementById('credit');if(s.imageCredit){cr.textContent=s.imageCredit+' ';if(s.creditUrl){var ca=el('a',0,'Source and licence');ca.href=s.creditUrl;ca.target='_blank';ca.rel='noopener';cr.appendChild(ca)}}else cr.hidden=true;
 document.getElementById('name').textContent=s.name;document.getElementById('sub').textContent=s.period+', '+s.location;
 var ch=document.getElementById('chips');[s.timings.split(' (')[0],fee(s)].concat(s.photoStatus?['Photos: '+s.photoStatus]:[]).forEach(function(t){ch.appendChild(el('span','chip',t))});
 document.getElementById('maps').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.mapQuery);
