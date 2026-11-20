@@ -15,8 +15,12 @@ var grid=document.getElementById('grid');
 if(grid){
 var me=HT.get();document.getElementById('hi').textContent='Hi, '+me.name;document.getElementById('pn').textContent=me.name;document.getElementById('pp').textContent='+91 '+me.phone.slice(0,5)+' '+me.phone.slice(5);
 document.getElementById('signout').onclick=function(){HT.out();location.replace('index.html')};
-function tab(n){document.getElementById('tab-explore').hidden=n!=='explore';document.getElementById('tab-profile').hidden=n!=='profile';[].forEach.call(document.querySelectorAll('.tabs button'),function(b){if(b.dataset.t===n)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});scrollTo(0,0)}
+function tab(n){['explore','map','profile'].forEach(function(x){document.getElementById('tab-'+x).hidden=x!==n});[].forEach.call(document.querySelectorAll('.tabs button'),function(b){if(b.dataset.t===n)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});scrollTo(0,0)}
 [].forEach.call(document.querySelectorAll('.tabs button'),function(b){b.onclick=function(){tab(b.dataset.t)}});
+var mh=document.getElementById('maphost'),MU=window.HT_MAP_EMBED;
+if(MU){var fr=el('iframe','mapframe');fr.src=MU;fr.title='Map of Heritage Trails sites';fr.loading='lazy';fr.setAttribute('allowfullscreen','');mh.appendChild(fr)}
+else mh.appendChild(el('p','note','The interactive map is coming soon. Use the links below to open each site in Google Maps.'));
+S.forEach(function(s){var li=el('li'),l=el('a',0,s.name);l.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.mapQuery);l.target='_blank';l.rel='noopener';li.appendChild(l);li.appendChild(el('span','m',s.type));document.getElementById('maplist').appendChild(li)});
 Object.keys(TR).forEach(function(k){var l=trail(k),a=el('a','tcard');a.href=url(l[0],k);a.appendChild(img(l[0],'t-img'));
 var b=el('div','t-body');b.appendChild(el('strong',0,TR[k]));b.appendChild(el('span','m',l.length+' stops'));a.appendChild(b);document.getElementById('trails').appendChild(a)});
 var type='All',term='',chips=document.getElementById('chips');

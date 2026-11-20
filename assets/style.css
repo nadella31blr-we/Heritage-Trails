@@ -50,3 +50,5 @@ body:not(.detail):not(.login){padding-bottom:4.5rem}.out{background:#fff;color:v
 .eyebrow{display:block;width:max-content;max-width:100%;border-top:3px solid var(--gold);padding-top:.4rem;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
 .ov h1{font-family:"Aptos Display",Aptos,"Plus Jakarta Sans",system-ui,sans-serif;font-size:1.9rem;line-height:1.15;font-weight:800;margin:.4rem auto .35rem}.ov p{margin:0 auto;font-size:.95rem}
 .credit{font-size:.8rem;color:var(--muted);margin:.5rem 0 0}
+.mapframe{display:block;width:100%;height:65vh;min-height:20rem;border:0;border-radius:var(--r);background:var(--line)}
+.maplist{list-style:none;margin:0 0 2rem;padding:0}.maplist li{display:flex;justify-content:space-between;gap:1rem;padding:.8rem 0;border-bottom:1px solid var(--line)}.maplist a{font-weight:600}
