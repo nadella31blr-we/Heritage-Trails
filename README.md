@@ -7,7 +7,7 @@ Product goal: mapped trails, site stories, visitor tips and feedback for at leas
 Open `index.html` (the sign-in page) in a browser. No build step and no server needed.
 
 ## Sign-in (demo)
-First page is the Heritage Trails sign-in: mobile number, 6-digit code, profile name (new users) and a short intro. By default it is a front-end demo: no SMS is sent and the code is shown on screen. To send real SMS, put your Firebase web app config in `assets/firebase-config.js` (Phone sign-in enabled, `nadella31blr-we.github.io` added as an authorized domain). The name and session are kept in the browser only.
+First page is the Heritage Trails sign-in: mobile number, 6-digit code, profile name (new users) and a short intro. Sign-in tries a real SMS first; if Firebase cannot send to a number (for example the free plan, which only texts test numbers), it falls back to an on-screen demo code so every Indian mobile number (10 digits starting 6 to 9) can sign in. With no Firebase config it is a front-end demo: no SMS is sent and the code is shown on screen. To send real SMS, put your Firebase web app config in `assets/firebase-config.js` (Phone sign-in enabled, `nadella31blr-we.github.io` added as an authorized domain). The name and session are kept in the browser only.
 
 ## Design
 App-style layout: searchable site cards with type filters, walk cards, a full-width photo on each site page, quick-fact chips, a visit info list, an Open in Google Maps button and a trail progress bar with a Next stop button.
