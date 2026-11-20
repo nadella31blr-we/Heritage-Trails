@@ -7,7 +7,12 @@ var u=['https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js','http
 function sendReal(done){loadFB(function(bad){if(bad)return done('Could not load the sign-in service. Check your connection.');
 try{if(st.vf)st.vf.clear()}catch(e){}st.vf=new firebase.auth.RecaptchaVerifier('rc',{size:'invisible'});
 firebase.auth().signInWithPhoneNumber('+91'+st.phone,st.vf).then(function(c){st.conf=c;st.tries=3;st.at=Date.now();done()}).catch(function(e){done(fbMsg(e))})})}
-function fbMsg(e){var c=(e&&e.code)||'';return c==='auth/invalid-phone-number'?'That number is not valid.':c==='auth/too-many-requests'?'Too many attempts. Please try again later.':c==='auth/quota-exceeded'?'SMS limit reached. Please try again later.':c==='auth/captcha-check-failed'?'Verification check failed. Refresh and try again.':'Could not send the code. Please try again.'}
+function fbMsg(e){var c=(e&&e.code)||'unknown';if(window.console)console.error('Sign-in error',e);
+var m={'auth/invalid-phone-number':'That number is not valid.','auth/too-many-requests':'Too many attempts. Please try again later.','auth/quota-exceeded':'SMS limit reached. Please try again later.',
+'auth/captcha-check-failed':'The security check failed. Refresh the page and try again.','auth/billing-not-enabled':'Real SMS needs billing turned on in Firebase. Use the test number instead.',
+'auth/operation-not-allowed':'Phone sign-in is not turned on in Firebase yet.','auth/unauthorized-domain':'This website address is not allowed in Firebase yet.','auth/invalid-app-credential':'The security check could not be verified. Refresh and try again.',
+'auth/network-request-failed':'No connection. Check your internet and try again.','auth/internal-error':'Firebase had an internal error. Try again in a minute.','auth/invalid-api-key':'The Firebase key in the app is not valid.','auth/web-storage-unsupported':'Your browser blocks storage. Allow it or use another browser.'};
+return (m[c]||'Could not send the code. Please try again.')+' ('+c+')'}
 function $(s){return sheet.querySelector(s)}
 function fmt(n){return n.slice(0,5)+' '+n.slice(5)}
 function show(html){clearInterval(timer);sheet.innerHTML=html}
