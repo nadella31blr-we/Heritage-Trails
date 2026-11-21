@@ -23,7 +23,10 @@ window.SITES = [
   "imageCredit": "Banner artwork. Photo reference: Sanjeeb Behera 45, Wikimedia Commons.",
   "eyebrow": "THE TEMPLE CITY",
   "tagline": "An imposing Kalinga-style shrine at the heart of old Bhubaneswar.",
-  "creditUrl": "https://commons.wikimedia.org/wiki/File:Lingaraj_Temple_Bhubaneswar.jpg"
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Lingaraj_Temple_Bhubaneswar.jpg",
+  "lat": 20.23833,
+  "lng": 85.83361,
+  "coordNote": null
  },
  {
   "id": "mukteswar-temple",
@@ -49,7 +52,10 @@ window.SITES = [
   "imageCredit": "Banner artwork. Photo reference: Sangram Keshari Senapati, Wikimedia Commons.",
   "eyebrow": "THE GEM OF ODISHA",
   "tagline": "A celebrated stone gateway and richly carved tenth-century shrine.",
-  "creditUrl": "https://commons.wikimedia.org/wiki/File:Mukteswar_Temple_in_Bhubaneswar_Old_Town.jpg"
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Mukteswar_Temple_in_Bhubaneswar_Old_Town.jpg",
+  "lat": 20.2427,
+  "lng": 85.84039,
+  "coordNote": null
  },
  {
   "id": "rajarani-temple",
@@ -75,7 +81,10 @@ window.SITES = [
   "imageCredit": "Banner artwork. Photo reference: Amartyabag, Wikimedia Commons.",
   "eyebrow": "SCULPTED IN STONE",
   "tagline": "A graceful sandstone temple known for its sculptural detail.",
-  "creditUrl": "https://commons.wikimedia.org/wiki/File:Rajarani_Temple_Side_View.jpg"
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Rajarani_Temple_Side_View.jpg",
+  "lat": 20.24344,
+  "lng": 85.84352,
+  "coordNote": null
  },
  {
   "id": "udayagiri-caves",
@@ -101,7 +110,10 @@ window.SITES = [
   "imageCredit": "Banner artwork. Photo reference: Debu 05, Wikimedia Commons.",
   "eyebrow": "CARVED INTO THE HILLS",
   "tagline": "Ancient rock-cut caves connected with the Jain tradition and Kharavela.",
-  "creditUrl": "https://commons.wikimedia.org/wiki/File:Khandagiri-Udyagiri-1_-group_of_cave_temples,_Odisha,_India.jpg"
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Khandagiri-Udyagiri-1_-group_of_cave_temples,_Odisha,_India.jpg",
+  "lat": 20.26283,
+  "lng": 85.78603,
+  "coordNote": null
  },
  {
   "id": "khandagiri-caves",
@@ -127,7 +139,10 @@ window.SITES = [
   "imageCredit": "Banner artwork. Photo reference: Debu 05, Wikimedia Commons.",
   "eyebrow": "CARVED INTO THE HILLS",
   "tagline": "Ancient rock-cut caves connected with the Jain tradition and Kharavela.",
-  "creditUrl": "https://commons.wikimedia.org/wiki/File:Khandagiri-Udyagiri-1_-group_of_cave_temples,_Odisha,_India.jpg"
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Khandagiri-Udyagiri-1_-group_of_cave_temples,_Odisha,_India.jpg",
+  "lat": 20.26283,
+  "lng": 85.78603,
+  "coordNote": "Shares one pin with Udayagiri; the two hills are about 150 to 200 m apart."
  },
  {
   "id": "parasurameswar-temple",
@@ -153,7 +168,10 @@ window.SITES = [
   "imageCredit": "Banner artwork. Photo reference: Balaji, Wikimedia Commons.",
   "eyebrow": "EARLY KALINGA ARCHITECTURE",
   "tagline": "An early surviving temple that reveals the evolution of Kalinga design.",
-  "creditUrl": "https://commons.wikimedia.org/wiki/File:Parasurameswar_Temple.jpg"
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Parasurameswar_Temple.jpg",
+  "lat": 20.24313,
+  "lng": 85.83905,
+  "coordNote": null
  },
  {
   "id": "ananta-vasudeva-temple",
@@ -179,7 +197,10 @@ window.SITES = [
   "imageCredit": "Banner artwork. Photo reference: Radosław Botev / Fundacja Nomos, Wikimedia Commons.",
   "eyebrow": "THE VAISHNAVA SHRINE",
   "tagline": "A historic temple beside the sacred waters of Bindu Sagar.",
-  "creditUrl": "https://commons.wikimedia.org/wiki/File:Bhubaneshwar_-_Bindu_Sagar_pond_with_Brahma_temple_-_view_to_Ananta_Vasudeva_Temple.jpg"
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Bhubaneshwar_-_Bindu_Sagar_pond_with_Brahma_temple_-_view_to_Ananta_Vasudeva_Temple.jpg",
+  "lat": 20.24061,
+  "lng": 85.83578,
+  "coordNote": null
  },
  {
   "id": "dhauli-shanti-stupa-and-ashokan-rock-edicts",
@@ -205,7 +226,10 @@ window.SITES = [
   "imageCredit": "Banner artwork. Photo reference: Psubhashish, Wikimedia Commons.",
   "eyebrow": "A LANDMARK OF PEACE",
   "tagline": "A memorial landscape associated with the Kalinga War and Ashoka.",
-  "creditUrl": "https://commons.wikimedia.org/wiki/File:Dhauli_Peace_Pagoda.jpg"
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Dhauli_Peace_Pagoda.jpg",
+  "lat": 20.19239,
+  "lng": 85.83945,
+  "coordNote": null
  },
  {
   "id": "chausathi-yogini-temple",
@@ -228,7 +252,10 @@ window.SITES = [
   "fallback": "assets/img/chausathi-yogini-temple.svg",
   "imageAlt": "Chausathi Yogini Temple, Bhubaneswar",
   "story": null,
-  "imageCredit": null
+  "imageCredit": null,
+  "lat": 20.22652,
+  "lng": 85.8756,
+  "coordNote": null
  },
  {
   "id": "odisha-state-museum",
@@ -254,7 +281,10 @@ window.SITES = [
   "imageCredit": "Banner artwork. Photo reference: Hemant_sahu_Raj, Wikimedia Commons.",
   "eyebrow": "THE STORY OF ODISHA",
   "tagline": "A place to explore the region’s history, archaeology and cultural collections.",
-  "creditUrl": "https://commons.wikimedia.org/wiki/File:Odisha_State_Museum.jpg"
+  "creditUrl": "https://commons.wikimedia.org/wiki/File:Odisha_State_Museum.jpg",
+  "lat": 20.2562,
+  "lng": 85.8415,
+  "coordNote": null
  },
  {
   "id": "museum-of-tribal-arts-artifacts-tribal-museum",
@@ -277,7 +307,10 @@ window.SITES = [
   "fallback": "assets/img/museum-of-tribal-arts-artifacts-tribal-museum.svg",
   "imageAlt": "Museum of Tribal Arts & Artifacts (Tribal Museum), Bhubaneswar",
   "story": null,
-  "imageCredit": null
+  "imageCredit": null,
+  "lat": null,
+  "lng": null,
+  "coordNote": null
  },
  {
   "id": "regional-museum-of-natural-history",
@@ -300,6 +333,9 @@ window.SITES = [
   "fallback": "assets/img/regional-museum-of-natural-history.svg",
   "imageAlt": "Regional Museum of Natural History, Bhubaneswar",
   "story": null,
-  "imageCredit": null
+  "imageCredit": null,
+  "lat": null,
+  "lng": null,
+  "coordNote": null
  }
 ];

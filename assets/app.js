@@ -15,12 +15,23 @@ var grid=document.getElementById('grid');
 if(grid){
 var me=HT.get();document.getElementById('hi').textContent='Hi, '+me.name;document.getElementById('pn').textContent=me.name;document.getElementById('pp').textContent='+91 '+me.phone.slice(0,5)+' '+me.phone.slice(5);
 document.getElementById('signout').onclick=function(){HT.out();location.replace('index.html')};
-function tab(n){['explore','map','profile'].forEach(function(x){document.getElementById('tab-'+x).hidden=x!==n});[].forEach.call(document.querySelectorAll('.tabs button'),function(b){if(b.dataset.t===n)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});scrollTo(0,0)}
+function tab(n){['explore','map','profile'].forEach(function(x){document.getElementById('tab-'+x).hidden=x!==n});[].forEach.call(document.querySelectorAll('.tabs button'),function(b){if(b.dataset.t===n)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});scrollTo(0,0);if(n==='map'&&window.htShowMap)window.htShowMap()}
 [].forEach.call(document.querySelectorAll('.tabs button'),function(b){b.onclick=function(){tab(b.dataset.t)}});
-var mh=document.getElementById('maphost'),MU=window.HT_MAP_EMBED;
+var mh=document.getElementById('maphost'),MU=window.HT_MAP_EMBED,lm=null,LU='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/';
 if(MU){var fr=el('iframe','mapframe');fr.src=MU;fr.title='Map of Heritage Trails sites';fr.loading='lazy';fr.setAttribute('allowfullscreen','');mh.appendChild(fr)}
-else mh.appendChild(el('p','note','The interactive map is coming soon. Use the links below to open each site in Google Maps.'));
-S.forEach(function(s){var li=el('li'),l=el('a',0,s.name);l.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.mapQuery);l.target='_blank';l.rel='noopener';li.appendChild(l);li.appendChild(el('span','m',s.type));document.getElementById('maplist').appendChild(li)});
+function loadL(cb){if(window.L)return cb();var c=document.createElement('link');c.rel='stylesheet';c.href=LU+'leaflet.min.css';document.head.appendChild(c);var j=document.createElement('script');j.src=LU+'leaflet.min.js';j.onload=cb;j.onerror=function(){mh.textContent='';mh.appendChild(el('p','note','The map could not load. Use the links below to open each site in Google Maps.'))};document.head.appendChild(j)}
+function drawMap(){if(MU)return;if(lm){lm.invalidateSize();return}
+var box=el('div','mapframe');box.id='lmap';mh.appendChild(box);mh.appendChild(el('p','note','Numbers show the stop order on each walk. Dashed lines join the stops in order and are not the walking route. Map data from OpenStreetMap contributors.'));
+loadL(function(){lm=L.map('lmap',{scrollWheelZoom:false});L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(lm);
+var pts=[],groups={};S.forEach(function(s){if(s.lat){var k=s.lat+','+s.lng;(groups[k]=groups[k]||[]).push(s)}});
+Object.keys(groups).forEach(function(k){var g=groups[k],s=g[0],p=[s.lat,s.lng];pts.push(p);
+var cls=s.trail==='old-town-temple-walk'?'t1':s.trail==='twin-hills-caves-walk'?'t2':'o',lab=s.trail?String(s.stop):'';
+var m=L.marker(p,{title:g.map(function(x){return x.name}).join(' and '),icon:L.divIcon({className:'pinwrap',html:'<span class="pin '+cls+'">'+lab+'</span>',iconSize:[30,30],iconAnchor:[15,15]})}).addTo(lm);
+var pop=el('div','pop');g.forEach(function(x){var d=el('div','popi');d.appendChild(el('strong',0,x.name));d.appendChild(el('div','m',x.type+', '+x.timings.split(' (')[0]));var a1=el('a',0,'Open site page');a1.href=url(x,x.trail);d.appendChild(a1);d.appendChild(document.createTextNode(' '));var a2=el('a',0,'Directions');a2.href='https://www.google.com/maps/dir/?api=1&destination='+x.lat+','+x.lng;a2.target='_blank';a2.rel='noopener';d.appendChild(a2);pop.appendChild(d)});m.bindPopup(pop)});
+Object.keys(TR).forEach(function(k){var l=trail(k).filter(function(x){return x.lat}).map(function(x){return[x.lat,x.lng]});if(l.length>1)L.polyline(l,{color:k==='old-town-temple-walk'?'#223B30':'#B58443',weight:3,dashArray:'6 8'}).addTo(lm)});
+if(pts.length)lm.fitBounds(pts,{padding:[30,30]});else lm.setView([20.2433,85.8390],12);setTimeout(function(){lm.invalidateSize()},50)})}
+window.htShowMap=drawMap;
+S.forEach(function(s){var li=el('li'),l=el('a',0,s.name);l.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.mapQuery);l.target='_blank';l.rel='noopener';li.appendChild(l);li.appendChild(el('span','m',s.type+(s.lat?'':', no pin yet')));document.getElementById('maplist').appendChild(li)});
 Object.keys(TR).forEach(function(k){var l=trail(k),a=el('a','tcard');a.href=url(l[0],k);a.appendChild(img(l[0],'t-img'));
 var b=el('div','t-body');b.appendChild(el('strong',0,TR[k]));b.appendChild(el('span','m',l.length+' stops'));a.appendChild(b);document.getElementById('trails').appendChild(a)});
 var type='All',term='',chips=document.getElementById('chips');

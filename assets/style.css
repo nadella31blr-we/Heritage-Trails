@@ -52,3 +52,5 @@ body:not(.detail):not(.login){padding-bottom:4.5rem}.out{background:#fff;color:v
 .credit{font-size:.8rem;color:var(--muted);margin:.5rem 0 0}
 .mapframe{display:block;width:100%;height:65vh;min-height:20rem;border:0;border-radius:var(--r);background:var(--line)}
 .maplist{list-style:none;margin:0 0 2rem;padding:0}.maplist li{display:flex;justify-content:space-between;gap:1rem;padding:.8rem 0;border-bottom:1px solid var(--line)}.maplist a{font-weight:600}
+.pinwrap{background:none;border:0}.pin{width:30px;height:30px;border-radius:50%;background:#223B30;color:#F6F1E5;border:2px solid #F6F1E5;display:grid;place-items:center;font:800 .85rem/1 Aptos,"Plus Jakarta Sans",system-ui,sans-serif;box-shadow:0 1px 5px #0007}.pin.t2{background:#B58443;color:#232722}.pin.o{background:#5B5F57}
+.pop{min-width:11rem}.popi+.popi{margin-top:.6rem;padding-top:.6rem;border-top:1px solid var(--line)}.popi a{font-weight:600}

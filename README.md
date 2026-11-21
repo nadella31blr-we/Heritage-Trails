@@ -16,6 +16,7 @@ App-style layout: searchable site cards with type filters, walk cards, a full-wi
 - `data/sites.js`: site data from the team research sheet (hours, entry, photography, dress code, trail, photo link). Add `story`, `imageCredit` per site as content is ready.
 - `home.html`: Explore and Profile tabs after sign-in.
 - `assets/auth.js`, `assets/login.js`, `assets/firebase-config.js`: session handling and the sign-in flow.
+- Map tab: an interactive OpenStreetMap map (Leaflet) with a pin for each site that has coordinates in `data/sites.js` (`lat`, `lng`), numbered stops and dashed trail lines. Coordinates come from Wikipedia location boxes and must be checked on the map. Tribal Museum and Natural History museum have no pin yet.
 - `assets/map-config.js`: paste the Google My Maps embed link here to show the map in the Map tab.
 - `docs/sites-for-my-maps.csv`: the 12 sites to import into Google My Maps (APDG3-31).
 - `site.html`: the reusable site page template (APDG3-28), one site per `?site=<id>`. Add `&trail=<trail-id>` to follow a walk, or `?check=1` to see missing content.
